@@ -116,18 +116,21 @@
 .contactsList__mail:visited,
 .contactsList__mail:hover,
 .contactsList__mail:focus  {
+  display: block;
   line-height: 24px;
   letter-spacing: -0.2px;
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
   color: #1B1C21;
+  margin-bottom: 12px;
 }
 
 .contactsList__phone,
 .contactsList__phone:visited,
 .contactsList__phone:hover,
 .contactsList__phone:focus {
+  display: block;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.6px;
@@ -135,6 +138,7 @@
   font-style: normal;
   font-weight: 900;
   color: #1B1C21;
+  margin-bottom: 40px;
 }
 
 .sideFooter__languageList {
