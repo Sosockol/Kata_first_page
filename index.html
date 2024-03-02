@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="public/favicon/CPS.svg">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" media="screen and (max-width: 767.98px)" href="mobile.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1119.98px)" href="tablet.css">
-    <link rel="stylesheet" media="screen and (min-width: 1120px)" href="desktop.css">
+    <link rel="stylesheet" href="public/styles/fontFace.css">
+    <link rel="stylesheet" href="public/styles/normalize.css">
+    <link rel="stylesheet" media="screen and (max-width: 767.98px)" href="public/styles/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1119.98px)" href="public/styles/tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 1120px)" href="public/styles/desktop.css">
+    <link rel="stylesheet" href="public/styles/menu.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>CPS ремонт</title>
   </head>
   <body>
+    <!-- Шапка для телефона/планшета -->
     <header class="l-header">
       <nav class="l-header__navbar navbar">
         <ul class="navbar__left">
           <li class="navbar__menu">
-            <button class='navbar__burgerButton defaultButton' type="button">
+            <button class='defaultButton' type="button">
               <img alt="Открыть меню" src="public/images/burger.svg">
             </button>
           </li>
@@ -27,33 +30,110 @@
         </ul>
         <ul class="navbar__right">
           <li class="navbar__call">
-            <button class='navbar__burgerButton defaultButton' type="button">
+            <button class='defaultButton' type="button">
               <img alt="Позвонить в службу поддержки" src="public/images/call.svg">
             </button>
           </li>
           <li class="navbar__chat">
-            <button class='navbar__burgerButton defaultButton' type="button">
+            <button class='defaultButton' type="button">
               <img alt="Чат поддержки" src="public/images/chat.svg">
             </button>
           </li>
           <li class="navbar__profile">
-            <button class='navbar__burgerButton defaultButton' type="button">
+            <button class='defaultButton' type="button">
               <img alt="Мой профиль" src="public/images/profile.svg">
             </button>
           </li>
           <li class="navbar__repair">
-            <button class='navbar__burgerButton defaultButton' type="button">
+            <button class='defaultButton' type="button">
               <img alt="Оставить заявку на ремонт" src="public/images/repair.svg">
             </button>
           </li>
           <li class="navbar__checkstatus">
-            <button class='navbar__burgerButton defaultButton' type="button">
+            <button class='defaultButton' type="button">
               <img alt="Проверить статус ремонта" src="public/images/checkstatus.svg">
             </button>
           </li>
       </nav>
     </header>
+    <!-- Конец Шапки -->
+
+    <!-- Боковая Менюшка -->
+    <aside class="l-sideMenu">
+      <div class="l-sideMenu__top">
+        <!-- Шапка меню -->
+        <header class="l-sideMenu__header">
+          <nav class="l-header__navbar navbar navbar--leftOnly">
+            <ul class="navbar__left">
+              <li class="navbar__cross">
+                <button class='defaultButton' type="button">
+                  <img alt="Закрыть меню" src="public/images/cross.svg">
+                </button>
+              </li>
+              <li class="navbar__logo">
+                <a>
+                  <img alt="Логотип компании CPS" width="97px" height="51px" src="public/favicon/CPS.svg">
+                </a>
+              </li>
+              <li class="navbar__search">
+                <button class='defaultButton' type="button">
+                  <img alt="Проверить статус ремонта" src="public/images/search.svg">
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <!-- Список Навигации -->
+        <ul class="l-sideMenu__list menuList">
+          <li class="menuList__item"><a>Ремонт техники</a></li>
+          <li class="menuList__item"><a>Услуги и сервисы</a></li>
+          <li class="menuList__item"><a>Корпоративным клиентам</a></li>
+          <li class="menuList__item"><a>Продавцам техники</a></li>
+          <li class="menuList__item"><a>Партнерам</a></li>
+          <li class="menuList__item"><a>Производителям</a></li>
+          <li class="menuList__item"><a>Наши сервисные центры</a></li>
+          <li class="menuList__item"><a>Контакты</a></li>
+        </ul>
+      </div>
+      <div class="l-sideMenu__bottom">
+        <!-- Подвал меню -->
+        <footer class="l-sideMenu__footer sideFooter">
+          <ul class="sideFooter__iconList iconList">
+            <li class="iconList__call">
+              <button class='defaultButton' type="button">
+                <img alt="Позвонить в службу поддержки" src="public/images/call.svg">
+              </button>
+            </li>
+            <li class="iconList__chat">
+              <button class='defaultButton' type="button">
+                <img alt="Чат поддержки" src="public/images/chat.svg">
+              </button>
+            </li>
+            <li class="iconList__profile">
+              <button class='defaultButton' type="button">
+                <img alt="Мой профиль" src="public/images/profile.svg">
+              </button>
+            </li>
+          </ul>
+          <address>
+            <ul class="sideFooter__contactsList contactsList">
+              <li><a class="contactsList__mail" href="mailto:mail@cps.com">mail@cps.com</a></li>
+              <li><a class="contactsList__phone" href="tel:+78008908900">8 800 890 8900</a></li>
+            </ul>
+          </address>
+          <ul class="sideFooter__languageList">
+            <li>RU</li>
+            <li>EN</li>
+            <li>CH</li>
+          </ul>
+        </footer>
+      </div>
+    </aside>
+    <!-- Конец Менюшки -->
+
+    <!-- Начало основной страницы -->
     <main class="l-main">
+      <!-- Шапка для Десктопа -->
       <header class="l-main__desktopHeader desktopHeader">
         <h1 class="l-main__h1 desktopHeader__h1">Услуги и сервисы</h1>
         <ul class="desktopHeader__list">
@@ -71,6 +151,7 @@
           </li>
         </ul>
       </header>
+      <!-- Слайдер -->
       <nav class="l-main__slider slider">
         <ul class="slider__list">
           <li class="slider__item">
@@ -94,6 +175,7 @@
           <div class="slider__fader"></div>
         </ul>
       </nav>
+      <!-- Текстовая часть -->
       <section class="l-main__section">
         <article class="l-main__article">
           <p class="l-main__p1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>

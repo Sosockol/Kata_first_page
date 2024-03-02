@@ -184,7 +184,7 @@
 
 .slider__fader {
   position: absolute;
-  left: 90vw;
+  right: 0;
   width: 10vw;
   height: 40px;
   pointer-events: none;
@@ -233,38 +233,4 @@
 
 .l-main__pictureWraper {
   text-align: center;
-}
-
-/* Ниже только шрифты */
-
-@font-face {
-  font-family: 'TT Lakes';
-  src: url('public/fonts/TTLakes-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'TT Lakes';
-  src: url('public/fonts/TTLakes-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'TT Lakes';
-  src: url('public/fonts/TTLakes-DemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'TT Lakes';
-  src: url('public/fonts/TTLakes-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
