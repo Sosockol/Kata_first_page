@@ -253,7 +253,7 @@
 
 .l-main__readNext::before {
   display: inline-block;
-  content: url('public/images/expand.svg');
+  content: url('../images/expand.svg');
   margin-right: 8px;
   width: 24px;
   height: 24px;
