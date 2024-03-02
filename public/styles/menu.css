@@ -68,6 +68,10 @@
   color: #7E7E82;
 }
 
+.menuList__item:active {
+  background-color: inherit;
+}
+
 .menuList__item::before {
   display: inline-block;
   content: '';
@@ -126,6 +130,7 @@
   font-weight: 600;
   color: #1B1C21;
   margin-bottom: 12px;
+  background: inherit;
 }
 
 .contactsList__phone,
@@ -141,6 +146,7 @@
   font-weight: 900;
   color: #1B1C21;
   margin-bottom: 40px;
+  background: inherit;
 }
 
 .sideFooter__languageList {
